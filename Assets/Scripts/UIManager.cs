@@ -67,8 +67,8 @@ public class UIManager : MonoBehaviour
         coinInstRectTransform.DOMove(coinIconRectTransform.position, 0.3f).OnComplete(() =>
         {
             coinInstRectTransform.gameObject.SetActive(false);
-            ShopDataHolder.instance.SetCoins(ShopDataHolder.instance.GetCoins() + 10);
             coinsText.SetText(ShopDataHolder.instance.GetCoins().ToString());
+            ShopDataHolder.instance.SetCoins(ShopDataHolder.instance.GetCoins() + 10);
         });
     }
 }

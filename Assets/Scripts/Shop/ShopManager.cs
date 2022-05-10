@@ -27,6 +27,7 @@ public class ShopManager : MonoBehaviour
     private int _skinCost = 1000;
 
     public int currentUnlockIndex = -1;
+    public bool toyUnlocked; 
 
     private void Awake()
     {

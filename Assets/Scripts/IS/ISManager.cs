@@ -191,22 +191,6 @@ public class ISManager : MonoBehaviour
             PlayerPrefs.SetInt("Unlocking", PlayerPrefs.GetInt("Unlocking", 0) + 1);
             PlayerPrefs.SetFloat("image", 0);
         }
-
-        if(CanvasManager.instance && CanvasManager.instance.skipLvl)
-
-        {
-            CanvasManager.instance.skipLvl = false;
-            CanvasManager.instance.NextButtonPress();
-        }
-        
-        MainCanvasController mcc = FindObjectOfType<MainCanvasController>();
-        
-        if(mcc && mcc.skipLvl)
-
-        {
-            mcc.skipLvl = false;
-            mcc.NextLevel();
-        }
         
         if (GameManager.instance && GameManager.instance.skipLvl)
         {
