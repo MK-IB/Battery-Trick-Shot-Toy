@@ -47,7 +47,7 @@ public class SkinUnlockManager : MonoBehaviour
     }
     public List<int> GetUnlockedIndicesList()
     {
-        var unlockedIndicesNum = ShopDataHolder.instance.GetUnlockedSkin();
+        var unlockedIndicesNum = ShopDataHolder.instance.GetUnlockedToy();
         char[] chars = unlockedIndicesNum.ToCharArray();
         int[] indicesArr = Array.ConvertAll(chars, c => (int)Char.GetNumericValue(c));
         return new List<int>(indicesArr);
@@ -70,9 +70,9 @@ public class SkinUnlockManager : MonoBehaviour
             currentSkin.sprite =
                 ShopDataHolder.instance.mobileSkins[unlockedIndicesList[unlockedIndicesList.Count - 1] + 1];
         }
-        /*if(ShopDataHolder.instance.GetUnlockedSkin() < 0 && ShopDataHolder.instance.GetUnlockedSkin() + 1 <= ShopManager.instance.currentUnlockIndex)
+        /*if(ShopDataHolder.instance.GetUnlockedToy() < 0 && ShopDataHolder.instance.GetUnlockedToy() + 1 <= ShopManager.instance.currentUnlockIndex)
             currentSkin.sprite = ShopDataHolder.instance.mobileSkins[ShopManager.instance.currentUnlockIndex];
-        else currentSkin.sprite = ShopDataHolder.instance.mobileSkins[ShopDataHolder.instance.GetUnlockedSkin()];*/
+        else currentSkin.sprite = ShopDataHolder.instance.mobileSkins[ShopDataHolder.instance.GetUnlockedToy()];*/
 
         _fillAmount = PlayerPrefs.GetFloat("skinFillAmount", 0);
         _fillAmount += 0.25f;
@@ -88,16 +88,16 @@ public class SkinUnlockManager : MonoBehaviour
             fillingImage.fillAmount = 0;
             _fillAmount = 0;
             PlayerPrefs.SetFloat("skinFillAmount", 0);
-
+            
+            percSkinLoadedText.gameObject.SetActive(false);
             yield return new WaitForSeconds(0.25f);
             getSkinWithAdButton.SetActive(true);
-            percSkinLoadedText.gameObject.SetActive(false);
-            ShopDataHolder.instance.SetSkinLockState(1);
-            ShopDataHolder.instance.SetUnlockedSkin(ShopDataHolder.instance.GetUnlockedSkin() + _skinUnlockedIndex++);
-            //print("Skin index added = " + _skinUnlockedIndex);
+            ShopDataHolder.instance.SetToyLockState(1);
+            ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
+            print("Skin index added = " + ShopDataHolder.instance.GetUnlockedToy());
         }
 
-        //print(" unlockde skin saved= " + ShopDataHolder.instance.GetUnlockedSkin());
+        //print(" unlockde skin saved= " + ShopDataHolder.instance.GetUnlockedToy());
     }
     
     
@@ -105,9 +105,10 @@ public class SkinUnlockManager : MonoBehaviour
     {
         if (ISManager.instance)
             ISManager.instance.ShowInterstitialAds();
-        ShopDataHolder.instance.SetSkinLockState(1);
-        //ShopDataHolder.instance.SetUnlockedSkin(ShopDataHolder.instance.GetUnlockedSkin() + _skinUnlockedIndex++);
-        
+        ShopDataHolder.instance.SetToyLockState(1);
+        ShopDataHolder.instance.SetShowToy(1);
+        //ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
+
     }
 
     public void GetUnlockedSkin()

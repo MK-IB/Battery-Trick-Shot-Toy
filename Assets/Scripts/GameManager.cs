@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     public bool gameOver;
     
+    private GameObject[] coinsArr;
+    private GameObject[] batteriesArr;
+    
     private void Awake()
     {
         instance = this;
@@ -19,7 +22,25 @@ public class GameManager : MonoBehaviour
         Vibration.Init();
         if(GA_FB.instance)
             GA_FB.instance.LevelStart(PlayerPrefs.GetInt("level", 1).ToString());
-        //CommonUIEventsManager.instance.StartLevelStartEvent();
+
+        int val = 1;
+        if(val == 1)
+            CheckForToyLevel(true);
+        else CheckForToyLevel(false);
+    }
+
+    void CheckForToyLevel(bool unlocked)
+    {
+        coinsArr = GameObject.FindGameObjectsWithTag("coin");
+        for (int i = 0; i < coinsArr.Length; i++)
+        {
+            coinsArr[i].SetActive(!unlocked);
+        }
+        batteriesArr = GameObject.FindGameObjectsWithTag("Battery");
+        for (int i = 0; i < batteriesArr.Length; i++)
+        {
+            batteriesArr[i].SetActive(unlocked);
+        }
     }
     public bool skipLvl;
     public void SkipLevel()

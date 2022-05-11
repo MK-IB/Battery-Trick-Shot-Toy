@@ -20,31 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08fe7edb-1086-4baf-98a8-8905c8df173e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grab and Smash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/House Mats/floor tex.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/House Mats/floor tex.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/House Mats/wooden tex 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/House Mats/wooden tex 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/cable.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/cable.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/coin inner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/coin inner.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/coin outer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/coin outer.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mobile Run.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Charger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Charger.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CollectionCoinOnScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CollectionCoinOnScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManagers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManagers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/among.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/among.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 11 Mario And Kart.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 11 Mario And Kart.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IS/ISManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IS/ISManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tangle Master.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorRain2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorRain2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Resources/materials/eyebrow/eyebrow#30002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Resources/materials/eyebrow/eyebrow#30002.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +55,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/CommonUIEventsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IS/ISManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhoneMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToyController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -72,8 +70,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PhoneMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -113,6 +114,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

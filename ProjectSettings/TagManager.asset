@@ -33,6 +33,9 @@ TagManager:
   - drop
   - Particle
   - randomButton
+  - Battery
+  - coins
+  - batteries
   layers:
   - Default
   - TransparentFX

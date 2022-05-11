@@ -46,30 +46,29 @@ public class ShopDataHolder : MonoBehaviour
     {
         _skinUnlockCanvas.SetActive(false);
     }
-    public void SetUnlockedSkin(string indices)
+    public void SetUnlockedToy(string indices)
     {
         PlayerPrefs.SetString("skinIndices", indices);
     }
     
-    public string GetUnlockedSkin()
+    public string GetUnlockedToy()
     {
         return PlayerPrefs.GetString("skinIndices", "0");
     }
-
-    public void SetBoughtSkins(int indices)
-    {
-        PlayerPrefs.SetInt("boughtSkins", indices);
-    }
-    public int GetBoughtSkins()
-    {
-        return PlayerPrefs.GetInt("boughtSkins", 9);
-    }
-
-    public void SetSkinLockState(int i)
+    public void SetToyLockState(int i)
     {
         PlayerPrefs.SetInt("skinLockState", i);
     }
-    public int GetSkinLockState()
+
+    public void SetShowToy(int i)
+    {
+        PlayerPrefs.SetInt("canShowToy", i);
+    }
+    public int GetShowToy()
+    {
+        return PlayerPrefs.GetInt("canShowToy", 0);
+    }
+    public int GetToyLockState()
     {
         return PlayerPrefs.GetInt("skinLockState", 0);
     }
@@ -83,11 +82,11 @@ public class ShopDataHolder : MonoBehaviour
         return PlayerPrefs.GetInt("coins", 0);
     }
 
-    public void SetDemoSkinIndex(int index)
+    public void SetDemoToyIndex(int index)
     {
         PlayerPrefs.SetInt("demoSkinIndex", index);
     }
-    public int GetDemoSkinIndex()
+    public int GetDemoToyIndex()
     {
         return PlayerPrefs.GetInt("demoSkinIndex", 0);
     }

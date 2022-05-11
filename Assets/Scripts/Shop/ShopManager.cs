@@ -27,11 +27,14 @@ public class ShopManager : MonoBehaviour
     private int _skinCost = 1000;
 
     public int currentUnlockIndex = -1;
-    public bool toyUnlocked; 
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null) instance = this;
+        else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
 
     private void OnEnable()
@@ -58,16 +61,16 @@ public class ShopManager : MonoBehaviour
 
     public void UnlockBoughtSkins()
     {
-        demoSkin.sprite = _mobileSkinsList[ShopDataHolder.instance.GetDemoSkinIndex()];
+        demoSkin.sprite = _mobileSkinsList[ShopDataHolder.instance.GetDemoToyIndex()];
 
         List<int> unlockedIndicesList = GetUnlockedIndicesList();
         //unlockedIndicesList.RemoveAt(0);
         for (int i = 0; i < unlockedIndicesList.Count; i++)
         {
-            print(unlockedIndicesList[i]);
+            //print(unlockedIndicesList[i]);
         }
         
-        if(ShopDataHolder.instance.GetSkinLockState() == 1)
+        if(ShopDataHolder.instance.GetToyLockState() == 1)
         {
             for (int i = 0; i < unlockedIndicesList.Count; i++)
             {
@@ -83,7 +86,7 @@ public class ShopManager : MonoBehaviour
     //RETURNS THE INDICES OF SKINS UNLOCKED
     List<int> GetUnlockedIndicesList()
     {
-        var unlockedIndicesNum = ShopDataHolder.instance.GetUnlockedSkin();
+        var unlockedIndicesNum = ShopDataHolder.instance.GetUnlockedToy();
         char[] chars = unlockedIndicesNum.ToCharArray();
         int[] indicesArr = Array.ConvertAll(chars, c => (int)Char.GetNumericValue(c));
         return new List<int>(indicesArr);
@@ -100,7 +103,7 @@ public class ShopManager : MonoBehaviour
             if (i == skinIndex)
             {
                 demoSkin.sprite = _mobileSkinsList[skinIndex];
-                ShopDataHolder.instance.SetDemoSkinIndex(skinIndex);
+                ShopDataHolder.instance.SetDemoToyIndex(skinIndex);
             }
         }
     }
@@ -153,8 +156,8 @@ public class ShopManager : MonoBehaviour
 
     void SaveRandomlyUnlockedSkins(int boughtIndex)
     {
-        var indicesInt = ShopDataHolder.instance.GetUnlockedSkin();
-        ShopDataHolder.instance.SetUnlockedSkin(ShopDataHolder.instance.GetUnlockedSkin() + boughtIndex);
+        var indicesInt = ShopDataHolder.instance.GetUnlockedToy();
+        ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + boughtIndex);
     }
 
     IEnumerator UnlockingAnimation()
