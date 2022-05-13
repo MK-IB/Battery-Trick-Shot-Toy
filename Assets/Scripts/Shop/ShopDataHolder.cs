@@ -8,7 +8,7 @@ public class ShopDataHolder : MonoBehaviour
 {
     public static ShopDataHolder instance;
 
-    public List<Sprite> mobileSkins;
+    public List<Sprite> toySkins;
     public int totalCoins;
 
     [HideInInspector] public GameObject _skinUnlockCanvas;

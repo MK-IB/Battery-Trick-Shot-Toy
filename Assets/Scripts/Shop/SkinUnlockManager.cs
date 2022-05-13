@@ -63,16 +63,16 @@ public class SkinUnlockManager : MonoBehaviour
         if (unlockedIndicesList.Count == 1)
         {
             currentSkin.sprite =
-                ShopDataHolder.instance.mobileSkins[0];
+                ShopDataHolder.instance.toySkins[0];
         }
         else
         {
             currentSkin.sprite =
-                ShopDataHolder.instance.mobileSkins[unlockedIndicesList[unlockedIndicesList.Count - 1] + 1];
+                ShopDataHolder.instance.toySkins[unlockedIndicesList[unlockedIndicesList.Count - 1] + 1];
         }
         /*if(ShopDataHolder.instance.GetUnlockedToy() < 0 && ShopDataHolder.instance.GetUnlockedToy() + 1 <= ShopManager.instance.currentUnlockIndex)
-            currentSkin.sprite = ShopDataHolder.instance.mobileSkins[ShopManager.instance.currentUnlockIndex];
-        else currentSkin.sprite = ShopDataHolder.instance.mobileSkins[ShopDataHolder.instance.GetUnlockedToy()];*/
+            currentSkin.sprite = ShopDataHolder.instance.toySkins[ShopManager.instance.currentUnlockIndex];
+        else currentSkin.sprite = ShopDataHolder.instance.toySkins[ShopDataHolder.instance.GetUnlockedToy()];*/
 
         _fillAmount = PlayerPrefs.GetFloat("skinFillAmount", 0);
         _fillAmount += 0.25f;

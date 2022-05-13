@@ -18,8 +18,8 @@ public class ToyController : MonoBehaviour
         if (other.gameObject.CompareTag("charger"))
         {
             //transform.parent = null;
-            transform.DOLocalRotate(new Vector3(0, 90, 90), 0.5f);
-            transform.localPosition = new Vector3(0, 0, -0.25f);
+            transform.parent.DOLocalRotate(new Vector3(0, 90, 0), 0.5f);
+            transform.parent.localPosition = new Vector3(0, 0, 0.76f);
             StartCoroutine(ToyDance());
         }
         if (other.gameObject.CompareTag("halfWayActionTrigger") && !GameManager.instance.gameOver)

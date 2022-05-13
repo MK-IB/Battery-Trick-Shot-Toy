@@ -22,22 +22,26 @@
     <list default="true" id="08fe7edb-1086-4baf-98a8-8905c8df173e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animators/Toy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animators/Toy.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Battery Tex.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Battery Tex.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Squid Doll Tex.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Squid Doll Tex.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/among.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/among.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Battery Tex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Battery Tex.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Squid Doll Tex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Squid Doll Tex.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 8 Swing Dining Table/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -69,12 +73,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IS/ISManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PhoneMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" />
       </list>
     </option>
   </component>

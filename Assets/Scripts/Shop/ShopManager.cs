@@ -39,7 +39,7 @@ public class ShopManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _mobileSkinsList = ShopDataHolder.instance.mobileSkins;
+        _mobileSkinsList = ShopDataHolder.instance.toySkins;
        
         UpdateCoinsDisplay();
         UnlockBoughtSkins();
