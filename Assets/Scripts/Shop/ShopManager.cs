@@ -30,11 +30,7 @@ public class ShopManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null) instance = this;
-        else
-        {
-            DestroyImmediate(gameObject);
-        }
+        instance = this;
     }
 
     private void OnEnable()
@@ -55,7 +51,7 @@ public class ShopManager : MonoBehaviour
        
       //Invoke(nameof(CheckRandomUnlockButtonState),0.25f);  
     }
-
+    
     private int unlockedSkinNum;
     
 
@@ -94,7 +90,6 @@ public class ShopManager : MonoBehaviour
 
     public void ChangeSkinInDemo(int skinIndex)
     {
-        List<int> allUnlockedIndicesList = new List<int>();
         var boughtIndices = GetUnlockedIndicesList();
         
 
@@ -102,7 +97,7 @@ public class ShopManager : MonoBehaviour
         {
             if (i == skinIndex)
             {
-                demoSkin.sprite = _mobileSkinsList[skinIndex];
+                ShopDataHolder.instance.ShowToyByIndex(skinIndex + 1);
                 ShopDataHolder.instance.SetDemoToyIndex(skinIndex);
             }
         }

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         if(GA_FB.instance)
             GA_FB.instance.LevelStart(PlayerPrefs.GetInt("level", 1).ToString());
 
-        int val = 1;
+        int val = ShopDataHolder.instance.GetToyLockState();
         if(val == 1)
             CheckForToyLevel(true);
         else CheckForToyLevel(false);

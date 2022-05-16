@@ -12,6 +12,9 @@ public class ShopDataHolder : MonoBehaviour
     public int totalCoins;
 
     [HideInInspector] public GameObject _skinUnlockCanvas;
+    public List<GameObject> toysList;
+    private int _toyCounter = 1;
+    
     private void Awake()
     {
         if (instance == null)
@@ -36,7 +39,32 @@ public class ShopDataHolder : MonoBehaviour
         CommonUIEventsManager.instance.LevelStartEvent += DeactivateSkinUnlockCanvas;
         CommonUIEventsManager.instance.LevelCompleteEvent += ActivateSkinUnlockCanvas;
     }
+    
+    public void UnlockShopToy()
+    {
+        DeacativateAllToys();
+        toysList[_toyCounter++].SetActive(true);
+        Debug.Log("Toy counter = " + _toyCounter);
+    }
 
+    public void ShowToyByIndex(int index)
+    {
+        DeacativateAllToys();
+        for (int i = 0; i < toysList.Count; i++)
+        {
+            if(i == index)
+                toysList[i].SetActive(true);
+        }
+    }
+
+    void DeacativateAllToys()
+    {
+        //DEACTIVATE ALL
+        for (int i = 0; i < toysList.Count; i++)
+        {
+            toysList[i].SetActive(false);
+        }
+    }
     void ActivateSkinUnlockCanvas()
     {
         _skinUnlockCanvas.SetActive(true);
@@ -55,11 +83,6 @@ public class ShopDataHolder : MonoBehaviour
     {
         return PlayerPrefs.GetString("skinIndices", "0");
     }
-    public void SetToyLockState(int i)
-    {
-        PlayerPrefs.SetInt("skinLockState", i);
-    }
-
     public void SetShowToy(int i)
     {
         PlayerPrefs.SetInt("canShowToy", i);
@@ -67,6 +90,12 @@ public class ShopDataHolder : MonoBehaviour
     public int GetShowToy()
     {
         return PlayerPrefs.GetInt("canShowToy", 0);
+    }
+    
+    //GETTING AND SETTING THE TOY LOCK STATE
+    public void SetToyLockState(int i)
+    {
+        PlayerPrefs.SetInt("skinLockState", i);
     }
     public int GetToyLockState()
     {

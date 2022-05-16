@@ -24,6 +24,9 @@ public class SkinUnlockManager : MonoBehaviour
     public RectTransform multiplierIndicator;
     public TextMeshProUGUI coinMultipliedText;
     public TextMeshProUGUI coinsText;
+    public GameObject toyDisplayArea;
+    public GameObject toySkinDisplayUI;
+    
     private int _skinUnlockedIndex;
 
     private void Awake()
@@ -82,6 +85,8 @@ public class SkinUnlockManager : MonoBehaviour
         {
             getSkinWithAdButton.SetActive(false);
             percSkinLoadedText.gameObject.SetActive(true);
+            toySkinDisplayUI.SetActive(true);
+            toyDisplayArea.SetActive(false);
         }
         else
         {
@@ -89,12 +94,15 @@ public class SkinUnlockManager : MonoBehaviour
             _fillAmount = 0;
             PlayerPrefs.SetFloat("skinFillAmount", 0);
             
+            toySkinDisplayUI.SetActive(false);
+            toyDisplayArea.SetActive(true);
             percSkinLoadedText.gameObject.SetActive(false);
             yield return new WaitForSeconds(0.25f);
             getSkinWithAdButton.SetActive(true);
-            ShopDataHolder.instance.SetToyLockState(1);
             ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
             print("Skin index added = " + ShopDataHolder.instance.GetUnlockedToy());
+            yield return new WaitForSeconds(1);
+            ShopDataHolder.instance.UnlockShopToy();
         }
 
         //print(" unlockde skin saved= " + ShopDataHolder.instance.GetUnlockedToy());

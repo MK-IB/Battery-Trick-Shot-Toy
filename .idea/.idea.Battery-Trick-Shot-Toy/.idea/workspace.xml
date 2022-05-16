@@ -20,30 +20,184 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08fe7edb-1086-4baf-98a8-8905c8df173e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Battery tex.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Battery tex.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Battery tex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Battery tex.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_black 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_black 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_red 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_red 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain3 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport3 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport3 1.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Battery-Trick-Shot-Toy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animators/Toy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animators/Toy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Battery Tex.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Battery Tex.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Squid Doll Tex.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Materials/Squid Doll Tex.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Squid Doll.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Toys/Textures/3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Battery Tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Battery Tex.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Squid Doll Tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Toys/Textures/Squid Doll Tex.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battery 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battery 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mobile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_shadowmask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/Lightmap-0_comp_shadowmask.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.1/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2 Dance.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2 Dance.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 7 Swing Girls Playing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Levels/Level 7 Swing Girls Playing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Skins/Toy 1.PNG.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/skin 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Skins/skin 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Boy texture/Materials/T_buidoi_Base_Color-Recovered.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Boy texture/Materials/T_buidoi_Base_Color-Recovered.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Boy texture/Materials/T_buidoi_Base_Color_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Boy texture/Materials/T_buidoi_Base_Color_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Low Battery.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Low Battery.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Phone Textures/red 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Phone Textures/red 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/KillerPants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/KillerPants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/KillerPants2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/KillerPants2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/KillerShoe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/KillerShoe.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/KillerShoe2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/KillerShoe2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/MaidClothes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/MaidClothes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/MaidHat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/MaidHat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/MaidShoes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/MaidShoes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/MaidSocks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/MaidSocks.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/MaidSocks_Alpha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/MaidSocks_Alpha.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/NK_SH_41_Albedo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/NK_SH_41_Albedo.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/PlayerHead1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/PlayerHead1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/PlayerHead4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/PlayerHead4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basePants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basePants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballBat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballBat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballPants2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballShoes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballShoes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballclothes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseballhat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/baseclothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/baseclothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketball.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketball.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballclothes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballhat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballhat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballpants2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/basketballsock2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Clothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Clothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Hat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Hat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Shoes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikini2Shoes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bikiniClothes3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bouquet2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/bunnyclothes_red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamclothes3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsampants3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/cheongsamshoes3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesRain3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/clothesSport3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_b4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_t2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_t2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_t4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/dateClothes_t4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/gun.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/gun.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hairColorBunny2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hairColorBunny2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/handBag.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/handBag.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorBasketball2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorBasketball2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorDate2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorDate2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorMaid2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorMaid2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorSkate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorSkate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorSniper.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/hariColorSniper.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/killerClothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/killerClothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlassesAlpha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlassesAlpha.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlassesMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlassesMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlove.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/killerGlove.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/pantsSkate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/pantsSkate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/shoeBussiness3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/shoeDate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/shoeDate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/shoeSkate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/shoeSkate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/skateClothes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/skateClothes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/skateHat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/skateHat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Material/skin2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Material/skin2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GameData/Resources/materials/body/GbodyAlbedo#31001 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GameData/Resources/materials/body/GbodyAlbedo#31001 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +228,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PhoneMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VirtualCameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/SkinUnlockManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopDataHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="28q0VU1UIKLKVMMCqN8i1o5PtWv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -121,6 +279,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
