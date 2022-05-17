@@ -95,7 +95,7 @@ public class ShopManager : MonoBehaviour
 
         for (int i = 0; i < boughtIndices.Count; i++)
         {
-            if (i == skinIndex)
+            if (boughtIndices[i] == skinIndex)
             {
                 ShopDataHolder.instance.ShowToyByIndex(skinIndex + 1);
                 ShopDataHolder.instance.SetDemoToyIndex(skinIndex);

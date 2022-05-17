@@ -523,7 +523,11 @@
             <e p="SkinUnlockManager.cs" t="Include" />
           </e>
           <e p="Skate.cs" t="Include" />
-          <e p="ToyController.cs" t="Include" />
+          <e p="Toy Controller" t="Include">
+            <e p="ToyController.cs" t="Include" />
+            <e p="ToyControllerContinuity.cs" t="Include" />
+            <e p="ToyControllerDrift.cs" t="Include" />
+          </e>
           <e p="UIManager.cs" t="Include" />
           <e p="Vibration.cs" t="Include" />
           <e p="VirtualCameraManager.cs" t="Include" />

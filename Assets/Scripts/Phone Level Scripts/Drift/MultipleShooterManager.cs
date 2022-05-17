@@ -13,6 +13,7 @@ public class MultipleShooterManager : MonoBehaviour
     public int shootNumCounter = 1;
 
     [HideInInspector] public PhoneMovementDrift currentPhoneScript;
+    [HideInInspector] public ToyControllerDrift currentToyController;
     [HideInInspector] public Vector3 phonePosition;
     
     private void Awake()
@@ -29,8 +30,15 @@ public class MultipleShooterManager : MonoBehaviour
     {
         if (shootNumCounter == maxShoot)
         {
-            StartCoroutine(currentPhoneScript.ChangeToChargingScreen());
-            StartCoroutine(currentPhoneScript.LevelCompleted());
+            if (ShopDataHolder.instance.GetToyLockState() == 1)
+            {
+                StartCoroutine(currentToyController.ToyDance());
+                Debug.Log("all round cleared !");
+            }else
+            {
+                StartCoroutine(currentPhoneScript.ChangeToChargingScreen());
+                StartCoroutine(currentPhoneScript.LevelCompleted());
+            }
         }
         else
         {
