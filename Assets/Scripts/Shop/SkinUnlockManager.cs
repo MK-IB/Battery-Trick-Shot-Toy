@@ -28,6 +28,11 @@ public class SkinUnlockManager : MonoBehaviour
     public GameObject toySkinDisplayUI;
     
     private int _skinUnlockedIndex;
+    [Space(20)] public GameObject coinEffect;
+    public GameObject noThanksTextButton;
+    public RectTransform coinRect;
+    public GameObject nextButtonOnUnlock;
+    public TextMeshProUGUI skinInformationText;
 
     private void Awake()
     {
@@ -38,11 +43,23 @@ public class SkinUnlockManager : MonoBehaviour
     {
         StartCoroutine(UnlockSkin());
         coinsText.SetText(ShopDataHolder.instance.GetCoins().ToString());
+        skinInformationText.SetText("NEW SKIN ON ITS WAY !");
+        nextButtonOnUnlock.SetActive(false);
         multiplierIndicator.GetComponent<DOTweenAnimation>().tween.Restart();
-        getCoinsWithAdButton.SetActive(true);
-        nextLevelButton.SetActive(false);
-        noThaksTextButton.SetActive(true);
-        multiplierScale.SetActive(true);
+        if (ISManager.instance.isRewardedVideoAvaliable)
+        {
+            getCoinsWithAdButton.SetActive(true);
+            nextLevelButton.SetActive(false);
+            noThanksTextButton.SetActive(true);
+            multiplierScale.SetActive(true);
+        }
+        else
+        {
+            getCoinsWithAdButton.SetActive(false);
+            nextLevelButton.SetActive(true);
+            noThanksTextButton.SetActive(false);
+            multiplierScale.SetActive(false);
+        }
     }
 
     private void Start()
@@ -79,8 +96,17 @@ public class SkinUnlockManager : MonoBehaviour
 
         _fillAmount = PlayerPrefs.GetFloat("skinFillAmount", 0);
         _fillAmount += 0.25f;
-        DOTween.To(() => fillingImage.fillAmount, x => fillingImage.fillAmount = x, _fillAmount, 1f);
+        DOTween.To(() => fillingImage.fillAmount, x => fillingImage.fillAmount = x, _fillAmount, 1f).OnComplete(() =>
+        {
+         CheckSkinUnlock();   
+        });
         percSkinLoadedText.SetText((_fillAmount * 100).ToString() + "% UNLOCKED");
+        yield return null;
+        //print(" unlockde skin saved= " + ShopDataHolder.instance.GetUnlockedToy());
+    }
+
+    void CheckSkinUnlock()
+    {
         if (_fillAmount < 1)
         {
             getSkinWithAdButton.SetActive(false);
@@ -97,24 +123,28 @@ public class SkinUnlockManager : MonoBehaviour
             toySkinDisplayUI.SetActive(false);
             toyDisplayArea.SetActive(true);
             percSkinLoadedText.gameObject.SetActive(false);
-            yield return new WaitForSeconds(0.25f);
+            //yield return new WaitForSeconds(0.25f);
             getSkinWithAdButton.SetActive(true);
-            ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
-            print("Skin index added = " + ShopDataHolder.instance.GetUnlockedToy());
-            yield return new WaitForSeconds(1);
-            ShopDataHolder.instance.UnlockShopToy();
-        }
 
-        //print(" unlockde skin saved= " + ShopDataHolder.instance.GetUnlockedToy());
+            
+            
+            print("Skin index added = " + ShopDataHolder.instance.GetUnlockedToy());
+            //yield return new WaitForSeconds(1);
+            ShopDataHolder.instance.UnlockShopToy(++_skinUnlockedIndex);
+        }
     }
     
-    
+    private bool _isUnlockedRewardPlayed, _getCoinRewardedPlayed;
     public void GetSkinWithAd()
     {
-        if (ISManager.instance)
-            ISManager.instance.ShowInterstitialAds();
+        ISManager.instance.ShowRewadedVideo();
+        _getCoinRewardedPlayed = false;
+        _isUnlockedRewardPlayed = true;
         ShopDataHolder.instance.SetToyLockState(1);
         ShopDataHolder.instance.SetShowToy(1);
+        _skinUnlockedIndex = PlayerPrefs.GetInt("skinIndex", 0);
+        ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex);
+        PlayerPrefs.SetInt("skinIndex", _skinUnlockedIndex);
         //ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
 
     }
@@ -157,10 +187,25 @@ public class SkinUnlockManager : MonoBehaviour
 
     public void PressMultipliedCoins()
     {
-        if (ISManager.instance)
-            ISManager.instance.ShowInterstitialAds();
+        _getCoinRewardedPlayed = true;
+        _isUnlockedRewardPlayed = false;
+        ISManager.instance.ShowRewadedVideo();
         multiplierIndicator.GetComponent<DOTweenAnimation>().tween.Pause();
-        StartCoroutine(ChangeButtonToNextLevel());
+    }
+    
+    //REWARD CALLBACK CALLS IT
+    public void DecideRewardCallback()
+    {
+        if (_isUnlockedRewardPlayed)
+        {
+            skinInformationText.SetText("CONGRATULATIONS !!! YOU GOT NEW SKIN !");
+            if(!nextLevelButton.activeSelf)
+                nextButtonOnUnlock.SetActive(true);
+            getSkinWithAdButton.SetActive(false);
+        }else if (_getCoinRewardedPlayed)
+        {
+            StartCoroutine(ChangeButtonToNextLevel());
+        }
     }
 
     IEnumerator ChangeButtonToNextLevel()

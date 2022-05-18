@@ -22,11 +22,40 @@ public class PhoneControlTap : MonoBehaviour
     private SplineFollower splineFollower;
 
     private bool phoneSlipped;
+    private List<GameObject> _toysList = new List<GameObject>();
 
     private void Start()
     {
         splineFollower = GetComponent<SplineFollower>();
         rb = GetComponent<Rigidbody>();
+        Transform toysParent = transform.GetChild(5);
+        for (int i = 0; i < toysParent.childCount; i++)
+        {
+            _toysList.Add(toysParent.GetChild(i).gameObject);
+        }
+        ActivateBoughtToy();
+    }
+    void ActivateBoughtToy()
+    {
+        for (int i = 0; i < _toysList.Count; i++)
+        {
+            _toysList[i].SetActive(false);
+        }
+        //ShopDataHolder.instance.SetDemoToyIndex(2);
+        int selectedToy = ShopDataHolder.instance.GetDemoToyIndex();
+        Debug.Log("Demo skin index = " +selectedToy);
+        if(ShopDataHolder.instance.GetToyLockState() == 1)
+        {
+            Debug.Log("Toy lock State = " + ShopDataHolder.instance.GetToyLockState());
+            GetComponent<Collider>().enabled = false;
+            GetComponent<Renderer>().enabled = false;
+            transform.GetChild(0).gameObject.SetActive(false);
+            for (int i = 0; i < _toysList.Count; i++)
+            {
+                if(selectedToy == i)
+                    _toysList[i].SetActive(true);
+            }
+        }
     }
 
     private void Update()

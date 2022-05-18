@@ -8,11 +8,10 @@ using UnityEngine;
 
 public class ToyController : MonoBehaviour
 {
-    public SplineFollower splineFollower;
-    
+
     private void Start()
     {
-        splineFollower = transform.root.GetComponent<SplineFollower>();
+       
     }
     
     private void OnTriggerEnter(Collider other)
@@ -26,7 +25,7 @@ public class ToyController : MonoBehaviour
         {
             //transform.parent = null;
             transform.parent.DOLocalRotate(new Vector3(0, 90, 0), 0.5f);
-            transform.parent.localPosition = new Vector3(0, 0, 0.76f);
+            transform.parent.localPosition = new Vector3(0.7f, 0, 0.6f);
             Rotation rotation = transform.root.GetComponent<Rotation>();
             if (rotation) rotation.enabled = false;
             StartCoroutine(ToyDance());
@@ -38,8 +37,7 @@ public class ToyController : MonoBehaviour
             AudioManager.instance.bgAudioSource.enabled = false;
             Vibration.Vibrate(27);
             Time.timeScale = 1;
-            splineFollower.follow = false;
-            splineFollower.enabled = false;
+            transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
             GetComponent<Collider>().enabled = false;
             VirtualCameraManager.instance.phoneFollower.Follow = null;
             AudioManager.instance.PlayClip(AudioManager.instance.obstacleHit);
@@ -55,6 +53,7 @@ public class ToyController : MonoBehaviour
     {
         Transform lastFocusVcam = VirtualCameraManager.instance.phoneLastFocus.transform;
         lastFocusVcam.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z - 4);
+        lastFocusVcam.LookAt(transform);
         AudioManager.instance.bgAudioSource.enabled = false;
         
         yield return new WaitForSeconds(1);

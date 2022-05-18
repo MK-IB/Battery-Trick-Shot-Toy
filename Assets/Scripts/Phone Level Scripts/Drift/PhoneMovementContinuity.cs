@@ -32,6 +32,7 @@ public class PhoneMovementContinuity : MonoBehaviour
         splineFollower = GetComponent<SplineFollower>();
         rb = GetComponent<Rigidbody>();
         ContinuityManager.instance.phonePosition = transform.position;
+        CommonUIEventsManager.instance.ToyChangedEvent += ActivateBoughtToy;
         Transform toysParent = transform.GetChild(5);
         for (int i = 0; i < toysParent.childCount; i++)
         {

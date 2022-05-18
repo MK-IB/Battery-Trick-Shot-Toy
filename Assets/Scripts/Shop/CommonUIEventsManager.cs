@@ -8,6 +8,7 @@ public class CommonUIEventsManager : MonoBehaviour
     public static CommonUIEventsManager instance;
     public event Action LevelStartEvent;
     public event Action LevelCompleteEvent;
+    public event Action ToyChangedEvent;
     
     private void Awake()
     {
@@ -24,5 +25,11 @@ public class CommonUIEventsManager : MonoBehaviour
         if (LevelCompleteEvent != null)
             LevelCompleteEvent();
     }
-    
+    public void StartToyChangedEvent()
+    {
+        if (ToyChangedEvent != null)
+        {
+            ToyChangedEvent();
+        }
+    }
 }

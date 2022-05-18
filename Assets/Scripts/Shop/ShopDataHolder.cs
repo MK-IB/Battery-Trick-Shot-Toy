@@ -40,11 +40,10 @@ public class ShopDataHolder : MonoBehaviour
         CommonUIEventsManager.instance.LevelCompleteEvent += ActivateSkinUnlockCanvas;
     }
     
-    public void UnlockShopToy()
+    public void UnlockShopToy(int index)
     {
         DeacativateAllToys();
-        toysList[_toyCounter++].SetActive(true);
-        Debug.Log("Toy counter = " + _toyCounter);
+        toysList[index].SetActive(true);
     }
 
     public void ShowToyByIndex(int index)

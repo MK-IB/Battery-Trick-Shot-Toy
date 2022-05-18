@@ -63,7 +63,7 @@ public class ShopManager : MonoBehaviour
         //unlockedIndicesList.RemoveAt(0);
         for (int i = 0; i < unlockedIndicesList.Count; i++)
         {
-            //print(unlockedIndicesList[i]);
+            print(unlockedIndicesList[i]);
         }
         
         if(ShopDataHolder.instance.GetToyLockState() == 1)
@@ -101,6 +101,8 @@ public class ShopManager : MonoBehaviour
                 ShopDataHolder.instance.SetDemoToyIndex(skinIndex);
             }
         }
+        //CommonUIEventsManager.instance.StartToyChangedEvent();
+        ShopDataHolder.instance.SetToyLockState(1);
     }
 
     void CheckRandomUnlockButtonState()

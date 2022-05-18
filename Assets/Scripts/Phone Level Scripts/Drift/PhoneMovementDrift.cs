@@ -31,6 +31,7 @@ public class PhoneMovementDrift : MonoBehaviour
         splineFollower = GetComponent<SplineFollower>();
         rb = GetComponent<Rigidbody>();
         MultipleShooterManager.instance.phonePosition = transform.position;
+        CommonUIEventsManager.instance.ToyChangedEvent += ActivateBoughtToy;
         Transform toysParent = transform.GetChild(5);
         for (int i = 0; i < toysParent.childCount; i++)
         {

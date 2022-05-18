@@ -66,6 +66,12 @@
     <explicitExcludes>
       <Path>.git</Path>
       <Path>.idea</Path>
+      <Path>Battery Trick Shot Test 1_BackUpThisFolder_ButDontShipItWithYourGame</Path>
+      <Path>Battery Trick Shot Test 1_BurstDebugInformation_DoNotShip</Path>
+      <Path>Battery Trick Shot Test 2_BackUpThisFolder_ButDontShipItWithYourGame</Path>
+      <Path>Battery Trick Shot Test 2_BurstDebugInformation_DoNotShip</Path>
+      <Path>Battery Trick Shot Test 3_BackUpThisFolder_ButDontShipItWithYourGame</Path>
+      <Path>Battery Trick Shot Test 3_BurstDebugInformation_DoNotShip</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Recordings</Path>

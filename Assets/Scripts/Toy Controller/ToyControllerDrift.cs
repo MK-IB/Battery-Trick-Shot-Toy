@@ -8,11 +8,10 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ToyControllerDrift : MonoBehaviour
 {
-    SplineFollower splineFollower;
 
     private void Start()
     {
-        splineFollower = transform.root.GetComponent<SplineFollower>();
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,6 +32,7 @@ public class ToyControllerDrift : MonoBehaviour
             
             Vibration.Vibrate(27);
 
+            transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
             MultipleShooterManager.instance.currentToyController = this;
             MultipleShooterManager.instance.CheckLevelComplete();
             GetComponent<Collider>().enabled = false;
@@ -45,8 +45,7 @@ public class ToyControllerDrift : MonoBehaviour
             AudioManager.instance.bgAudioSource.enabled = false;
             Vibration.Vibrate(27);
             Time.timeScale = 1;
-            splineFollower.follow = false;
-            splineFollower.enabled = false;
+            transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
             GetComponent<Collider>().enabled = false;
             VirtualCameraManager.instance.phoneFollower.Follow = null;
             AudioManager.instance.PlayClip(AudioManager.instance.obstacleHit);

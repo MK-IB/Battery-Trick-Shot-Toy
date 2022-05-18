@@ -6,12 +6,6 @@ using UnityEngine;
 
 public class ToyControllerContinuity : MonoBehaviour
 {
-    SplineFollower splineFollower;
-
-    private void Start()
-    {
-        splineFollower = transform.root.GetComponent<SplineFollower>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,11 +24,12 @@ public class ToyControllerContinuity : MonoBehaviour
             GetComponent<Animator>().enabled = true;
             
             Vibration.Vibrate(27);
-
-            //MultipleShooterManager.instance.currentToyController = this;
-            MultipleShooterManager.instance.CheckLevelComplete();
+            
+            transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+            ContinuityManager.instance.currentToyController = this;
+            ContinuityManager.instance.CheckLevelComplete();
             GetComponent<Collider>().enabled = false;
-            GetComponent<ToyControllerDrift>().enabled = false;
+            GetComponent<ToyControllerContinuity>().enabled = false;
         }
         if (other.gameObject.CompareTag("obstacle"))
         {
@@ -43,8 +38,7 @@ public class ToyControllerContinuity : MonoBehaviour
             AudioManager.instance.bgAudioSource.enabled = false;
             Vibration.Vibrate(27);
             Time.timeScale = 1;
-            splineFollower.follow = false;
-            splineFollower.enabled = false;
+            transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
             GetComponent<Collider>().enabled = false;
             VirtualCameraManager.instance.phoneFollower.Follow = null;
             AudioManager.instance.PlayClip(AudioManager.instance.obstacleHit);

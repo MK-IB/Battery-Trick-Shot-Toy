@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -38,6 +39,8 @@ public class PhoneMovement : MonoBehaviour
     {
         splineFollower = GetComponent<SplineFollower>();
         rb = GetComponent<Rigidbody>();
+        CommonUIEventsManager.instance.ToyChangedEvent += ActivateBoughtToy;
+        
         Transform toysParent = transform.GetChild(5);
         for (int i = 0; i < toysParent.childCount; i++)
         {
@@ -52,6 +55,12 @@ public class PhoneMovement : MonoBehaviour
         {
             _toysList[i].SetActive(false);
         }
+        
+        SplineComputer splineComp = splineFollower.spline;
+        Vector3 point1Pos = splineComp.GetPoint(0, SplineComputer.Space.World).position;
+        Debug.Log("Point 1 pos = " + point1Pos);
+        splineComp.GetPoint(0, SplineComputer.Space.World).SetPosition(new Vector3(point1Pos.x, point1Pos.y + 2, point1Pos.z));
+        splineComp.Rebuild();
         //ShopDataHolder.instance.SetDemoToyIndex(2);
         int selectedToy = ShopDataHolder.instance.GetDemoToyIndex();
         Debug.Log("Demo skin index = " +selectedToy);

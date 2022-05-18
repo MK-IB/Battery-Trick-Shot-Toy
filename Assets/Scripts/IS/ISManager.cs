@@ -105,8 +105,6 @@ public class ISManager : MonoBehaviour
         if (!canShowAds || !isRewardedVideoAvaliable)
             return;
 
-        
-
         HideBannerAds();
         PrintOut("CanShowAds @ ShowRewadedVideo");
         IronSource.Agent.showRewardedVideo();
@@ -185,19 +183,7 @@ public class ISManager : MonoBehaviour
 
     public void RewardCallBacks()
     {
-        if (PlayerPrefs.GetFloat("image", 0) >= 1)
-        {
-            // GameManager.instance.playerCharacters[PlayerPrefs.GetInt("Unlocking", 0)].SetActive(true);
-            PlayerPrefs.SetInt("Unlocking", PlayerPrefs.GetInt("Unlocking", 0) + 1);
-            PlayerPrefs.SetFloat("image", 0);
-        }
-        
-        if (GameManager.instance && GameManager.instance.skipLvl)
-        {
-            GameManager.instance.skipLvl = false;
-            GameManager.instance.NextLevel();
-        }
-        
+        SkinUnlockManager.instance.DecideRewardCallback();
     }
 
     public void PrintOut(string txt)
