@@ -26,6 +26,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip confettiBlast;
     public AudioClip coin;
     public List<AudioClip> malePainReactions;
+    public AudioClip pop;
+    
     private void Awake()
     {
         instance = this;

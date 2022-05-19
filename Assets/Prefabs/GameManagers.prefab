@@ -3373,6 +3373,7 @@ MonoBehaviour:
   malePainReactions:
   - {fileID: 8300000, guid: 8c31c4bccd839d7479e1d5a7625a2f0e, type: 3}
   - {fileID: 8300000, guid: a1dbdd4430ce7dd4985d2e94f751ae63, type: 3}
+  pop: {fileID: 8300000, guid: 4020ad08045098a42be16d8fbc6c9b62, type: 3}
 --- !u!82 &4453152017743750846
 AudioSource:
   m_ObjectHideFlags: 0

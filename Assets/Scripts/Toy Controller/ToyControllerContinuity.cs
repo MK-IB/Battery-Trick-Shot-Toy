@@ -11,7 +11,11 @@ public class ToyControllerContinuity : MonoBehaviour
     {
         if (other.CompareTag("Battery"))
         {
-            other.gameObject.SetActive(false);
+            other.transform.DOScale(Vector3.zero, 0.3f).OnComplete(() =>
+            {
+                other.gameObject.SetActive(false); 
+            });
+            AudioManager.instance.PlayClip(AudioManager.instance.pop);
         }
 
         if (other.gameObject.CompareTag("charger"))

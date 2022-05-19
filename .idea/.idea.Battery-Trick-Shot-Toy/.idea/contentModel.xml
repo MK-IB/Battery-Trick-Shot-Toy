@@ -485,6 +485,8 @@
           <e p="Jumper.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="Miscellaneous" t="Include">
+            <e p="BatteryCollection.cs" t="Include" />
+            <e p="CoinCollection.cs" t="Include" />
             <e p="LevelSpecificHelp.cs" t="Include" />
             <e p="TapScale.cs" t="Include" />
           </e>
@@ -493,7 +495,6 @@
           </e>
           <e p="Phone Level Scripts" t="Include">
             <e p="Drift" t="Include">
-              <e p="CoinCollection.cs" t="Include" />
               <e p="ContinuityManager.cs" t="Include" />
               <e p="MultipleShooterManager.cs" t="Include" />
               <e p="PhoneMovementContinuity.cs" t="Include" />

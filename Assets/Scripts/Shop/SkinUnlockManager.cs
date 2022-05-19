@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class SkinUnlockManager : MonoBehaviour
@@ -67,20 +68,25 @@ public class SkinUnlockManager : MonoBehaviour
     }
     public List<int> GetUnlockedIndicesList()
     {
-        var unlockedIndicesNum = ShopDataHolder.instance.GetUnlockedToy();
+        var unlockedIndicesNum = ShopDataHolder.instance.GetDisplayedToys();
         char[] chars = unlockedIndicesNum.ToCharArray();
         int[] indicesArr = Array.ConvertAll(chars, c => (int)Char.GetNumericValue(c));
         return new List<int>(indicesArr);
     }
+
+    private List<int> unlockedIndicesList =  new List<int>();
     IEnumerator UnlockSkin()
     {
-        List<int> unlockedIndicesList = GetUnlockedIndicesList();
+        unlockedIndicesList = GetUnlockedIndicesList();
 
-        for (int i = 0; i < unlockedIndicesList.Count; i++)
+        _skinUnlockedIndex = PlayerPrefs.GetInt("skinIndex", 0);
+        currentSkin.sprite = ShopDataHolder.instance.toySkins[_skinUnlockedIndex];
+        Debug.Log("Skin Index = " + _skinUnlockedIndex);
+        /*for (int i = 0; i < unlockedIndicesList.Count; i++)
         {
             print(unlockedIndicesList[i]);
-        }
-        if (unlockedIndicesList.Count == 1)
+        }*/
+        /*if (unlockedIndicesList.Count == 1)
         {
             currentSkin.sprite =
                 ShopDataHolder.instance.toySkins[0];
@@ -88,8 +94,8 @@ public class SkinUnlockManager : MonoBehaviour
         else
         {
             currentSkin.sprite =
-                ShopDataHolder.instance.toySkins[unlockedIndicesList[unlockedIndicesList.Count - 1] + 1];
-        }
+                ShopDataHolder.instance.toySkins[unlockedIndicesList[unlockedIndicesList.Count - 1]];
+        }*/
         /*if(ShopDataHolder.instance.GetUnlockedToy() < 0 && ShopDataHolder.instance.GetUnlockedToy() + 1 <= ShopManager.instance.currentUnlockIndex)
             currentSkin.sprite = ShopDataHolder.instance.toySkins[ShopManager.instance.currentUnlockIndex];
         else currentSkin.sprite = ShopDataHolder.instance.toySkins[ShopDataHolder.instance.GetUnlockedToy()];*/
@@ -125,12 +131,20 @@ public class SkinUnlockManager : MonoBehaviour
             percSkinLoadedText.gameObject.SetActive(false);
             //yield return new WaitForSeconds(0.25f);
             getSkinWithAdButton.SetActive(true);
-
+            ShopDataHolder.instance.UnlockShopToy(PlayerPrefs.GetInt("skinIndex", 0));
+            PlayerPrefs.SetInt("skinIndex", PlayerPrefs.GetInt("skinIndex", 0) + 1);
             
-            
-            print("Skin index added = " + ShopDataHolder.instance.GetUnlockedToy());
+            /*ShopDataHolder.instance.SetDisplayedToys(ShopDataHolder.instance.GetDisplayedToys() + 1);
+            print("Skin index added = " + GetUnlockedIndicesList()[GetUnlockedIndicesList().Count - 1]);
             //yield return new WaitForSeconds(1);
-            ShopDataHolder.instance.UnlockShopToy(++_skinUnlockedIndex);
+            unlockedIndicesList = GetUnlockedIndicesList();
+
+            for (int i = 0; i < unlockedIndicesList.Count; i++)
+            {
+                print(unlockedIndicesList[i]);
+            }
+            */
+
         }
     }
     
@@ -142,10 +156,13 @@ public class SkinUnlockManager : MonoBehaviour
         _isUnlockedRewardPlayed = true;
         ShopDataHolder.instance.SetToyLockState(1);
         ShopDataHolder.instance.SetShowToy(1);
-        _skinUnlockedIndex = PlayerPrefs.GetInt("skinIndex", 0);
-        ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex);
-        PlayerPrefs.SetInt("skinIndex", _skinUnlockedIndex);
-        //ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + _skinUnlockedIndex++);
+        //ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + unlockedIndicesList[unlockedIndicesList.Count - 1]);
+
+        int valToAdd = PlayerPrefs.GetInt("skinIndex", 0) - 1;
+        if(valToAdd >= 0)
+            ShopDataHolder.instance.SetUnlockedToy(ShopDataHolder.instance.GetUnlockedToy() + valToAdd);
+        Debug.Log("Skin Index after getting toy= " + _skinUnlockedIndex);
+        Debug.Log("Skin Index final = " + PlayerPrefs.GetInt("skinIndex", 0));
 
     }
 

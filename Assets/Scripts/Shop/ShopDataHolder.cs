@@ -59,6 +59,7 @@ public class ShopDataHolder : MonoBehaviour
     void DeacativateAllToys()
     {
         //DEACTIVATE ALL
+        toysList[0].transform.parent.GetChild(0).gameObject.SetActive(false);
         for (int i = 0; i < toysList.Count; i++)
         {
             toysList[i].SetActive(false);
@@ -72,6 +73,15 @@ public class ShopDataHolder : MonoBehaviour
     void DeactivateSkinUnlockCanvas()
     {
         _skinUnlockCanvas.SetActive(false);
+    }
+    
+    public void SetDisplayedToys(string index)
+    {
+        PlayerPrefs.SetString("rewardedSKin", index);
+    }
+    public string GetDisplayedToys()
+    {
+        return PlayerPrefs.GetString("rewardedSKin", "0");
     }
     public void SetUnlockedToy(string indices)
     {

@@ -4344,7 +4344,6 @@ MonoBehaviour:
   totalCoins: 0
   _skinUnlockCanvas: {fileID: 0}
   toysList:
-  - {fileID: 626762611715036486}
   - {fileID: 478533785}
   - {fileID: 1098585882}
   - {fileID: 919132149359795991}
@@ -10366,7 +10365,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626762611715036486}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   m_LocalPosition: {x: 0.129, y: -0.126, z: -0}
   m_LocalScale: {x: 1, y: 0.925, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15113,20 +15112,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626762611715036486}
   m_Mesh: {fileID: 4068373912626513877, guid: 8e0ef5208edaed24297c43ffdb53d813, type: 3}
---- !u!114 &3771411193080184922
-MonoBehaviour:
+--- !u!95 &3771411193080184922
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626762611715036486}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05e8fb1f4cbe7947ab6016e50184bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50
-  dir: {x: 0, y: 1, z: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6b3f507857b8a94a9d9fc2f928e91f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3771918987993397580
 Transform:
   m_ObjectHideFlags: 0
