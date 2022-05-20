@@ -24,6 +24,12 @@ public class GirlHitReaction : MonoBehaviour
             AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
             other.GetComponent<PhoneMovement>().BreakScreen();
         }
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            StartCoroutine(StopToy(other.gameObject));
+            AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
+        }
     }
 
     public IEnumerator StopMobile(GameObject mobile)
@@ -47,6 +53,22 @@ public class GirlHitReaction : MonoBehaviour
         Vibration.Vibrate(27);
         GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(2.5f));
 
+    }
+
+    public IEnumerator StopToy(GameObject toy)
+    {
+        AudioManager.instance.bgAudioSource.enabled = false;
+        transform.DOLocalRotate(new Vector3(0, 180, 0), 0.55f);
+        animator.SetTrigger("throw");
+        VirtualCameraManager.instance.phoneFollower.m_Follow = null;
+        manReactionCamera.Priority = 12;
+        Time.timeScale = 1;
+        toy.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+        toy.GetComponent<Collider>().enabled = false;
+        AudioManager.instance.PlayClip(AudioManager.instance.obstacleHit);
+        yield return new WaitForSeconds(2f);
+        Vibration.Vibrate(27);
+        GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(2.5f));
     }
 
     public void ThrowPot()

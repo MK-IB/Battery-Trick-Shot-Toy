@@ -45,6 +45,39 @@ public class SleepingGirlReaction : MonoBehaviour
             /*animatorInfo = animator.GetCurrentAnimatorClipInfo(0);
             if (animatorInfo[0].clip.name == "angry") ;*/
         }
+
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            StartCoroutine(StopToy(other.gameObject));
+        }
+    }
+
+    IEnumerator StopToy(GameObject toy)
+    {
+        AudioManager.instance.bgAudioSource.enabled = false;
+        AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
+
+        manReactionCamera.Priority = 21;
+        animator.SetTrigger("sleepToStand");
+        animator.transform.DORotate(new Vector3(0, 150, 0), 0.55f);
+        sleepingBuzzEffect.SetActive(false);
+        faceAngryEmoji.SetActive(true);
+        toy.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+        toy.GetComponent<Rigidbody>().isKinematic = false;
+        
+        VirtualCameraManager.instance.phoneFollower.m_Follow = null;
+        VirtualCameraManager.instance.cinemachineBrain.m_DefaultBlend.m_Time = 1;
+        manReactionCamera.Priority = 12;
+
+        yield return new WaitForSeconds(1.2f);
+        rootParent.position = new Vector3(rootParent.position.x, 0.52f, rootParent.position.z);
+        yield return new WaitForSeconds(0.7f);
+        StartCoroutine(CoupleRun());
+
+        yield return new WaitForSeconds(1.5f);
+        Vibration.Vibrate(27);
+        GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(2.5f));
     }
 
     IEnumerator StopMobile(GameObject mobile)

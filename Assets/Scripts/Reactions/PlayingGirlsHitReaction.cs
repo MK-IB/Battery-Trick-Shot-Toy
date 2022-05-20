@@ -28,6 +28,37 @@ public class PlayingGirlsHitReaction : MonoBehaviour
             Vibration.Vibrate(27);
             GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(4.5f));
         }
+
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            other.GetComponent<Collider>().enabled = false;
+            StartCoroutine(StopToy(other.gameObject));
+        }
+    }
+
+    IEnumerator StopToy(GameObject toy)
+    {
+        AudioManager.instance.bgAudioSource.enabled = false;
+        //AudioManager.instance.StartCoroutine(AudioManager.instance.PlayMaleHitSound());
+
+        manReactionCamera.Priority = 21;
+        transform.DOLocalRotate(new Vector3(0, 180, 0), 0.55f);
+        stringSpline.SetActive(false);
+        animator.SetTrigger("run");
+        transform.DOMove(chairOnFloor.transform.position, 0.5f).OnComplete(()=> {
+            ThrowChairCommon.instance.chair = chairOnHand;
+            animator.SetTrigger("throwIn");
+            chairOnFloor.SetActive(false);
+            //StartCoroutine(ThrowChair());
+        });
+
+        toy.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+        toy.GetComponent<Rigidbody>().isKinematic = false;
+        VirtualCameraManager.instance.phoneFollower.m_Follow = null;
+        Vibration.Vibrate(27);
+        yield return new WaitForSeconds(3);
+        GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(1f));
     }
 
     public IEnumerator StopMobile(GameObject mobile)

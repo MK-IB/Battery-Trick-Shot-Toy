@@ -521,6 +521,7 @@ MonoBehaviour:
   maxShoot: 0
   shootNumCounter: 1
   currentPhoneScript: {fileID: 0}
+  currentToyController: {fileID: 0}
   phonePosition: {x: 0, y: 0, z: 0}
 --- !u!1 &48306963
 GameObject:
@@ -17237,7 +17238,9 @@ MonoBehaviour:
   _optimizeAngleThreshold: 0.5
   _space: 0
   _sampleMode: 0
-  subscribers: []
+  subscribers:
+  - {fileID: 1143354080}
+  - {fileID: 1252877886}
   nodes:
   - node: {fileID: 457286383}
     pointIndex: 1
@@ -19288,6 +19291,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ee04dbda742cc844a2e564e5a4c05b1, type: 3}
+--- !u!114 &1252877886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2393737077667381536, guid: 2ee04dbda742cc844a2e564e5a4c05b1, type: 3}
+  m_PrefabInstance: {fileID: 1252877885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ddc1a2536715a24095c464a2c394d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1252877887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3058950870453164955, guid: 2ee04dbda742cc844a2e564e5a4c05b1, type: 3}
@@ -21581,7 +21595,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7922251121040759823, guid: f160ec7edd24935409fc1632a63ab941, type: 3}
+  - {fileID: 2100000, guid: 6d2e4bba2dc6f3144af986ed68054555, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22335,7 +22349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1517646368
 Transform:
   m_ObjectHideFlags: 0
@@ -23978,7 +23992,8 @@ MonoBehaviour:
   _optimizeAngleThreshold: 0.5
   _space: 0
   _sampleMode: 0
-  subscribers: []
+  subscribers:
+  - {fileID: 1923463274}
   nodes: []
 --- !u!4 &1592083433
 Transform:
@@ -32716,7 +32731,8 @@ MonoBehaviour:
   _optimizeAngleThreshold: 0.5
   _space: 0
   _sampleMode: 0
-  subscribers: []
+  subscribers:
+  - {fileID: 7787775695506040879}
   nodes: []
 --- !u!4 &2118688130
 Transform:

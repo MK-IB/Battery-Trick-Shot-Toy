@@ -37,6 +37,31 @@ public class CoupleHitTrigger2 : MonoBehaviour
             Vibration.Vibrate(27);
             partner.GetComponent<Animator>().SetTrigger("disbelief");
         }
+
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            other.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+            other.GetComponent<Rigidbody>().isKinematic = false;
+            AudioManager.instance.bgAudioSource.enabled = false;
+            if (isMan)
+                AudioManager.instance.StartCoroutine(AudioManager.instance.PlayMaleHitSound());
+            else
+                AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
+
+            manReactionCamera.Priority = 21;
+            animator.transform.DORotate(new Vector3(0, 180, 0), 0.55f);
+            partner.position = new Vector3(partner.position.x, 0, partner.position.z);
+            animator.SetTrigger("angry");
+            Vibration.Vibrate(27);
+            partner.GetComponent<Animator>().SetTrigger("disbelief");
+            GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(3.5f));
+        }
+    }
+
+    void Reaction()
+    {
+        
     }
 
     IEnumerator StopMobile(GameObject mobile)

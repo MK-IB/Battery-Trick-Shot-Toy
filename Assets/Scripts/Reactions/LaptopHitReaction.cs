@@ -16,5 +16,12 @@ public class LaptopHitReaction : MonoBehaviour
             AudioManager.instance.bgAudioSource.enabled = false;
             Vibration.Vibrate(27);
         }
+
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            StartCoroutine(girlHitReaction.StopToy(other.gameObject));
+            Vibration.Vibrate(27);
+        }
     }
 }

@@ -17,6 +17,7 @@ public class CoinCollection : MonoBehaviour
             gameObject.SetActive(false);
         });*/
         gameObject.SetActive(false);
+        Vibration.Vibrate(17);
         AudioManager.instance.PlayClip(AudioManager.instance.coin);
     }
 }

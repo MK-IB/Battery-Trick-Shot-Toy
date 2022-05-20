@@ -716,6 +716,7 @@ MonoBehaviour:
   maxShoot: 0
   shootNumCounter: 1
   currentPhoneScript: {fileID: 0}
+  currentToyController: {fileID: 0}
   phonePosition: {x: 0, y: 0, z: 0}
 --- !u!1 &48306963
 GameObject:
@@ -5604,7 +5605,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455255651}
-  m_LocalRotation: {x: 0.0013032667, y: 0.968197, z: -0.25013492, w: 0.005044553}
+  m_LocalRotation: {x: 0.0013032553, y: 0.968197, z: -0.2501349, w: 0.0050445097}
   m_LocalPosition: {x: -2.15, y: 12.34, z: 17.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6753,7 +6754,7 @@ MonoBehaviour:
   followMode: 0
   autoStartPosition: 0
   follow: 1
-  _followSpeed: 4
+  _followSpeed: 2
   _followDuration: 1
   _startPosition: 0
   editorSetPosition: 1
@@ -7982,7 +7983,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684705752}
-  m_LocalRotation: {x: 0.63108975, y: -0.18275099, z: 0.15638782, w: 0.7374759}
+  m_LocalRotation: {x: 0.6310898, y: -0.18275103, z: 0.1563879, w: 0.7374759}
   m_LocalPosition: {x: -4.85, y: 9.74, z: 20.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11146,7 +11147,7 @@ MonoBehaviour:
   followMode: 0
   autoStartPosition: 0
   follow: 1
-  _followSpeed: 4
+  _followSpeed: 2
   _followDuration: 1
   _startPosition: 0.5
   editorSetPosition: 1

@@ -22,6 +22,7 @@ public class ToyController : MonoBehaviour
             {
                 other.gameObject.SetActive(false); 
             });
+            Vibration.Vibrate(17);
             AudioManager.instance.PlayClip(AudioManager.instance.pop);
         }
 
@@ -29,7 +30,7 @@ public class ToyController : MonoBehaviour
         {
             //transform.parent = null;
             transform.parent.DOLocalRotate(new Vector3(0, 90, 0), 0.5f);
-            transform.parent.localPosition = new Vector3(0.7f, 0, 0.6f);
+            transform.parent.localPosition = new Vector3(0.7f, 0, 0.98f);
             Rotation rotation = transform.root.GetComponent<Rotation>();
             if (rotation) rotation.enabled = false;
             StartCoroutine(ToyDance());

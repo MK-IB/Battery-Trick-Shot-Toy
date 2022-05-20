@@ -43,6 +43,25 @@ public class SleepingManReaction : MonoBehaviour
             /*animatorInfo = animator.GetCurrentAnimatorClipInfo(0);
             if (animatorInfo[0].clip.name == "angry") ;*/
         }
+
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            other.GetComponent<Rigidbody>().isKinematic = false;
+            other.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+            AudioManager.instance.bgAudioSource.enabled = false;
+            AudioManager.instance.StartCoroutine(AudioManager.instance.PlayMaleHitSound());
+            manReactionCamera.Priority = 21;
+            animator.SetTrigger("sleepToStand");
+            
+            rootParent.position = new Vector3(rootParent.position.x, 0.52f, rootParent.position.z);
+            animator.transform.DORotate(new Vector3(0, 150, 0), 0.55f);
+            sleepingBuzzEffect.SetActive(false);
+            faceAngryEmoji.SetActive(true);
+            Vibration.Vibrate(27);
+            StartCoroutine(CoupleRun());
+            GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(4.5f));
+        }
     }
 
     IEnumerator StopMobile(GameObject mobile)

@@ -36,6 +36,7 @@ TagManager:
   - Battery
   - coins
   - batteries
+  - toy
   layers:
   - Default
   - TransparentFX

@@ -34,6 +34,7 @@ public class SkinUnlockManager : MonoBehaviour
     public RectTransform coinRect;
     public GameObject nextButtonOnUnlock;
     public TextMeshProUGUI skinInformationText;
+    public TextMeshProUGUI coinRewardInfoText;
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class SkinUnlockManager : MonoBehaviour
         skinInformationText.SetText("NEW SKIN ON ITS WAY !");
         nextButtonOnUnlock.SetActive(false);
         multiplierIndicator.GetComponent<DOTweenAnimation>().tween.Restart();
+        coinRewardInfoText.gameObject.SetActive(false);
         if (ISManager.instance.isRewardedVideoAvaliable)
         {
             getCoinsWithAdButton.SetActive(true);
@@ -80,7 +82,8 @@ public class SkinUnlockManager : MonoBehaviour
         unlockedIndicesList = GetUnlockedIndicesList();
 
         _skinUnlockedIndex = PlayerPrefs.GetInt("skinIndex", 0);
-        currentSkin.sprite = ShopDataHolder.instance.toySkins[_skinUnlockedIndex];
+        if(_skinUnlockedIndex < ShopDataHolder.instance.toySkins.Count)
+            currentSkin.sprite = ShopDataHolder.instance.toySkins[_skinUnlockedIndex];
         Debug.Log("Skin Index = " + _skinUnlockedIndex);
         /*for (int i = 0; i < unlockedIndicesList.Count; i++)
         {
@@ -229,7 +232,6 @@ public class SkinUnlockManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         int totalCoins = _claimedCoins + ShopDataHolder.instance.GetCoins();
-        Debug.Log("claimed coins = " + _claimedCoins);
         coinsText.SetText(totalCoins.ToString());
         ShopDataHolder.instance.SetCoins(totalCoins);
 
@@ -237,6 +239,8 @@ public class SkinUnlockManager : MonoBehaviour
         nextLevelButton.SetActive(true);
         noThaksTextButton.SetActive(false);
         multiplierScale.SetActive(false);
-        Debug.Log("Coins added = " + totalCoins);
+        coinRewardInfoText.gameObject.SetActive(true);
+        coinRewardInfoText.SetText("WOAH ! YOU GOT " + _claimedCoins + " COINS !!");
+        coinEffect.GetComponent<ParticleControlScript>().PlayControlledParticles(transform.position, coinRect);
     }
 }

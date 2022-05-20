@@ -694,6 +694,7 @@ MonoBehaviour:
   maxShoot: 2
   shootNumCounter: 1
   currentPhoneScript: {fileID: 0}
+  currentToyController: {fileID: 0}
   phonePosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &47222893
 PrefabInstance:

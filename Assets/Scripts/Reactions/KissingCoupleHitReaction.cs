@@ -38,6 +38,11 @@ public class KissingCoupleHitReaction : MonoBehaviour
                 AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
             }
         }
+        if (other.gameObject.CompareTag("toy"))
+        {
+            GetComponent<Collider>().enabled = false;
+            StartCoroutine(StopToy(other.gameObject));
+        }
     }
     public IEnumerator StopMobile(GameObject mobile)
     {
@@ -60,5 +65,29 @@ public class KissingCoupleHitReaction : MonoBehaviour
         mobile.SetActive(false);
         GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(2.5f));
 
+    }
+
+    public IEnumerator StopToy(GameObject toy)
+    {
+        heartParticles.SetActive(false);
+        Vibration.Vibrate(27);
+        rootParent.transform.DOLocalRotate(new Vector3(0, 180, 0), 0.55f);
+        animator.SetTrigger("argue2");
+        partnerAnimator.transform.DOLocalRotate(new Vector3(0, 180, 0), 0.55f);
+        partnerAnimator.SetTrigger("argue");
+        VirtualCameraManager.instance.phoneFollower.m_Follow = null;
+        manReactionCamera.Priority = 12;
+        toy.transform.parent.parent.GetComponent<SplineFollower>().enabled = false;
+        toy.GetComponent<Rigidbody>().isKinematic = false;
+        
+        if (transform.name.Contains("Boy"))
+        {
+            AudioManager.instance.StartCoroutine(AudioManager.instance.PlayMaleHitSound());
+        }
+        else {
+            AudioManager.instance.PlayClip(AudioManager.instance.girlHit);
+        }
+        yield return new WaitForSeconds(3.5f);
+        GameManager.instance.StartCoroutine(GameManager.instance.LevelFailed(2.5f));
     }
 }
