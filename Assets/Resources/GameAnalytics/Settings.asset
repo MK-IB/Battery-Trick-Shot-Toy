@@ -25,16 +25,22 @@ MonoBehaviour:
   UserMessagesSubmitted: 0
   UserMessagesFailed: 0
   CustomArea: 
-  gameKey: []
-  secretKey: []
-  Build: []
-  SelectedPlatformOrganization: []
-  SelectedPlatformStudio: []
-  SelectedPlatformGame: []
-  SelectedPlatformGameID: 
-  SelectedOrganization: 
-  SelectedStudio: 
-  SelectedGame: 
+  gameKey:
+  - d0aec4d33fbd0aa10c678133c59b04bb
+  secretKey:
+  - 1286a3519753fcdf349b59c05860a4d00cbfd333
+  Build:
+  - 1.7
+  SelectedPlatformOrganization:
+  - Day Dreamz Studio
+  SelectedPlatformStudio:
+  - Day Dreamz Studio
+  SelectedPlatformGame:
+  - Battery Trick Shot
+  SelectedPlatformGameID: 1dff0200
+  SelectedOrganization: 01000000
+  SelectedStudio: 01000000
+  SelectedGame: 2a000000
   NewVersion: 
   Changes: 
   SignUpOpen: 0
@@ -42,7 +48,7 @@ MonoBehaviour:
   GameName: Battery Trick Shot
   OrganizationName: 
   OrganizationIdentifier: 
-  EmailGA: 
+  EmailGA: Ashok.timuz@gmail.com
   IntroScreen: 0
   InfoLogEditor: 1
   InfoLogBuild: 1
@@ -56,8 +62,8 @@ MonoBehaviour:
   ResourceItemTypes: []
   ResourceCurrencies: []
   LastCreatedGamePlatform: 0
-  Platforms: 
-  CurrentInspectorState: 0
+  Platforms: 0b000000
+  CurrentInspectorState: 1
   ClosedHints: 
   DisplayHints: 0
   DisplayHintsScrollState: {x: 0, y: 0}
@@ -84,7 +90,7 @@ MonoBehaviour:
   IncludeGooglePlay: 1
   FpsCriticalThreshold: 20
   FpsCirticalSubmitInterval: 1
-  PlatformFoldOut: 
+  PlatformFoldOut: 01
   CustomDimensions01FoldOut: 0
   CustomDimensions02FoldOut: 0
   CustomDimensions03FoldOut: 0
